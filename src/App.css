@@ -57,6 +57,34 @@
 }
 
 #tweet-quote {
-  justify-self: end;
-  width: fit-content;
+  justify-self: center;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  color: white;
+  background-color: #313846;
+  padding: 0.5rem 3rem;
+  border-radius: 18px;
+}
+
+#tweet-quote:hover {
+  background-color: #3b4863;
+}
+
+#tweet-quote>img {
+  width: 1.5rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+}
+
+#github-link {
+  text-decoration: none;
+}
+
+#github-link>img {
+  width: 2rem;
 }
