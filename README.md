@@ -1,6 +1,10 @@
 # Random Quote Machine
-One of the required projects for the Front End Development Libraries certification from freeCodeCamp.   
-Link to project requirements: https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine
+One of the required projects for the Front End Development Libraries certification from freeCodeCamp.  
+
+Hosted at https://random-quote-machine.gjtiquia.com/ 
+
+Link to project requirements: 
+https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine
 
 
 ## Create React App README
