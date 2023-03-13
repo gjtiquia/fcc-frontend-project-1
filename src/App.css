@@ -13,31 +13,50 @@
   color: white;
 }
 
-main {
-  background-color: red;
-}
-
 #quote-box {
-  /* background-color: #282c34; */
-  /* background-color: red; */
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* font-size: calc(10px + 2vmin); */
+  /* background-color: green; */
+  display: grid;
   color: white;
 }
 
 #text {
+  justify-self: start;
+  margin-left: 1.5rem;
   font-size: 2rem;
+  max-width: 60ch;
+}
+
+#text::before,
+#text::after {
+  content: ' " ';
 }
 
 #author {
+  justify-self: end;
   font-size: 1.5rem;
-  text-align: right;
+  margin-right: 2rem;
+}
+
+#author::before {
+  content: "- ";
 }
 
 #new-quote {
+  justify-self: center;
   width: fit-content;
-  padding: 0.5rem 1rem;
+  padding: 1rem 3rem;
+  color: white;
+  font-size: 1.25rem;
+  background-color: #3b4558;
+  border: none;
+  border-radius: 18px;
+}
+
+#new-quote:hover {
+  background-color: #495e85;
+}
+
+#tweet-quote {
+  justify-self: end;
+  width: fit-content;
 }

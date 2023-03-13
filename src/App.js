@@ -9,10 +9,11 @@ function App() {
 
       <main>
         <div id='quote-box'>
-          <p id='text'>The quote which is something quite long</p>
+          <p id='text'>The quote which is something quite long something quite long something quite long something quite long.</p>
           <p id='author'>The author</p>
           <button id='new-quote'>New Quote</button>
           <a id='tweet-quote' href='twitter.com/intent/tweet'>Tweet</a>
+          <img alt="twitter"></img>
         </div>
       </main>
     </div>
