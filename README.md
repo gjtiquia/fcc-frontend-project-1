@@ -1,8 +1,13 @@
-# Getting Started with Create React App
+# Random Quote Machine
+One of the required projects for the Front End Development Libraries certification from freeCodeCamp.   
+Link to project requirements: https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine
+
+
+## Create React App README
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
