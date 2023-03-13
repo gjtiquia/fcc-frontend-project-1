@@ -19,21 +19,33 @@ const RANDOM_QUOTES_ARRAY = [
     },
 ];
 
+const GenerateRandomNumber = () => Math.floor(Math.random() * RANDOM_QUOTES_ARRAY.length);
+
 function QuoteBox() {
+    const [index, setIndex] = useState(0);
     const [quote, setQuote] = useState("Some Quote");
     const [author, setAuthor] = useState("Some Author");
+
+    const GenerateRandomQuote = () => {
+        setIndex(prevIndex => {
+            const currentIndex = GenerateRandomNumber();
+            if (prevIndex === currentIndex)
+                return (prevIndex + 1) % RANDOM_QUOTES_ARRAY.length;
+
+            return currentIndex;
+        });
+    };
 
     // Initialize
     useEffect(() => {
         GenerateRandomQuote();
     }, []);
 
-    const GenerateRandomQuote = () => {
-        const randomIndex = Math.floor(Math.random() * RANDOM_QUOTES_ARRAY.length);
-
-        setQuote(RANDOM_QUOTES_ARRAY[randomIndex].quote);
-        setAuthor(RANDOM_QUOTES_ARRAY[randomIndex].author);
-    };
+    // Update Quote and Author when Index changes
+    useEffect(() => {
+        setQuote(RANDOM_QUOTES_ARRAY[index].quote);
+        setAuthor(RANDOM_QUOTES_ARRAY[index].author);
+    }, [index]);
 
     return <div id='quote-box'>
         <p id='text'>{quote}</p>
