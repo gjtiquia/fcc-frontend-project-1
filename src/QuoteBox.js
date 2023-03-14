@@ -17,6 +17,10 @@ const RANDOM_QUOTES_ARRAY = [
         quote: "One small step for man, one giant leap for mankind.",
         author: "Neil Armstrong",
     },
+    {
+        quote: "Life just f***ing goes on.",
+        author: "Eunice",
+    },
 ];
 
 const GenerateRandomNumber = () => Math.floor(Math.random() * RANDOM_QUOTES_ARRAY.length);
